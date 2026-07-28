@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai code project</title>
+    <style>
+        *{
+            /* flush css */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            display: flex;
+            background-color: rgb(31, 176, 224);
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+        }
+
+        nav div ul{
+            display: flex;
+            cursor: pointer;
+            gap: 30px;
+            list-style-type: none;
+        }
+
+        nav div button {
+            padding: 5px 10px ;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav div button:hover{
+            background-color: #7281e6;
+            color: aliceblue;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 80px;
+            background-color: rgb(31, 176, 224);
+        }
+
+        .hero div h1{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero div p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero div button {
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 150px;
+            font-size: 20px;
+        }
+        .hero div button:hover{
+            background-color: #7281e6;
+            color: aliceblue;
+        }
+
+        .hero div image{
+            width: 100%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+
+        <div>
+            <p>My Logo</p>
+        </div>
+
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div>
+            <button>Signup</button>
+            <button>Login</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Hero Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam natus reprehenderit doloremque tempora, aliquam explicabo? Cumque consequatur eaque error velit commodi voluptas similique quibusdam! Accusantium voluptatum eveniet iusto at dicta tempora minima. Error reprehenderit velit at ut, quibusdam, nihil commodi repudiandae nobis recusandae molestiae suscipit earum perferendis vel? Nobis, autem?</p>
+            <button>Sign up</button>
+        </div>
+        <div>
+            <img src="./batman.jpg" alt="" width="500px">
+        </div>
+    </section>
+</body>
+</html>
