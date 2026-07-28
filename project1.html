@@ -41,7 +41,7 @@
 
         .hero {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             padding: 40px 80px;
             background-color: rgb(31, 176, 224);
@@ -73,6 +73,15 @@
         .hero div image{
             width: 100%;
             border-radius: 20px;
+            box-shadow: 0 0 10px white;
+        }
+        .hero div image:hover {
+            transform: rotate(10deg) ;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .logo_text {
+            
         }
     </style>
 </head>
@@ -105,6 +114,17 @@
         </div>
         <div>
             <img src="./batman.jpg" alt="" width="500px">
+        </div>
+    </section>
+
+    <h2 class="logo_text">Batman Multiverse</h2>
+    <section class="logo">
+        <div>
+            <img src="./images (2).jpeg" alt="">
+            <img src="./images (3).jpeg" alt="">
+            <img src="./images (4).jpeg" alt="">
+            <img src="./images (5).jpeg" alt="">
+            <img src="./images (6).jpeg" alt="">
         </div>
     </section>
 </body>
