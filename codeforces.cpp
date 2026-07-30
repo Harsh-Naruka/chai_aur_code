@@ -1,27 +1,50 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-    int cnt[3001] = {0};
+    int t;
+    cin >> t;
 
-    for (int i = 2; i <= n; i++) {
-        if (cnt[i] == 0) {   // i is prime
-            for (int j = i; j <= n; j += i) {
-                cnt[j]++;
-            }
+    while (t--) {
+        int n;
+        cin >> n;
+
+        vector<int> a(n);
+
+        for (int i = 0; i < n; i++)
+            cin >> a[i];
+
+        // Fix first and last elements
+        if (a[0] == -1) {
+            if (a[n - 1] == -1)
+                a[0] = a[n - 1] = 0;
+            else
+                a[0] = a[n - 1];
+        } else {
+            if (a[n - 1] == -1)
+                a[n - 1] = a[0];
         }
-    }
 
-    int ans = 0;
-    for (int i = 2; i <= n; i++) {
-        if (cnt[i] == 2)
-            ans++;
-    }
+        // Fill remaining blanks with 0
+        for (int i = 1; i < n - 1; i++) {
+            if (a[i] == -1)
+                a[i] = 0;
+        }
 
-    cout << ans+1;
+        int ans = a[n - 1] - a[0];
+        if (ans < 0)
+            ans = -ans;
+
+        cout << ans << "\n";
+
+        for (int x : a)
+            cout << x << " ";
+        cout << "\n";
+    }
 
     return 0;
 }
