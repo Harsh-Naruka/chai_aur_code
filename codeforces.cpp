@@ -17,8 +17,6 @@ int main() {
 
         for (int i = 0; i < n; i++)
             cin >> a[i];
-
-        // Fix first and last elements
         if (a[0] == -1) {
             if (a[n - 1] == -1)
                 a[0] = a[n - 1] = 0;
