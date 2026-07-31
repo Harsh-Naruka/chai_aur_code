@@ -17,6 +17,10 @@ int main() {
 
         for (int i = 0; i < n; i++)
             cin >> a[i];
+<<<<<<< HEAD
+=======
+
+>>>>>>> c2f9210 (Update codeforces.cpp)
         if (a[0] == -1) {
             if (a[n - 1] == -1)
                 a[0] = a[n - 1] = 0;
@@ -27,18 +31,18 @@ int main() {
                 a[n - 1] = a[0];
         }
 
-        // Fill remaining blanks with 0
-        for (int i = 1; i < n - 1; i++) {
-            if (a[i] == -1)
-                a[i] = 0;
-        }
+<<<<<<< HEAD
 
-        int ans = a[n - 1] - a[0];
-        if (ans < 0)
-            ans = -ans;
+=======
+>>>>>>>
+        
+<<<<<<< HEAD
 
-        cout << ans << "\n";
 
+=======
+
+
+>>>>>>>
         for (int x : a)
             cout << x << " ";
         cout << "\n";
