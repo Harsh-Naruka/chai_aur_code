@@ -3,18 +3,12 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     int t;
     cin >> t;
-
     while (t--) {
         int n;
         cin >> n;
-
         vector<int> a(n);
-
         for (int i = 0; i < n; i++)
             cin >> a[i];
 <<<<<<< HEAD
@@ -32,6 +26,7 @@ int main() {
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>>
@@ -46,6 +41,16 @@ int main() {
         for (int x : a)
             cout << x << " ";
         cout << "\n";
+=======
+        for (int i = 1; i < n - 1; i++) {
+            if (a[i] == -1)
+                a[i] = 0;
+        }
+        int ans = a[n - 1] - a[0];
+        if (ans < 0)
+            ans = -ans;
+
+>>>>>>> 3de847d (Continue updating codeforces.cpp)
     }
 
     return 0;
