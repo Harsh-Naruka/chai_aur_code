@@ -10,11 +10,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: rgb(31, 176, 224);
         }
 
         nav{
             display: flex;
-            background-color: rgb(31, 176, 224);
+            
             justify-content: space-between;
             align-items: center;
             padding: 20px 80px;
@@ -70,18 +71,65 @@
             color: aliceblue;
         }
 
-        .hero div image{
+        .hero div img {
             width: 100%;
             border-radius: 20px;
             box-shadow: 0 0 10px white;
         }
-        .hero div image:hover {
-            transform: rotate(10deg) ;
+        .hero div img:hover {
+            transform: rotate(3deg) ;
             transition: all 0.5s ease-in-out;
         }
 
         .logo_text {
-            
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 50px;
+        }
+        .logo {
+            margin: 20px 10%;
+            border: 2px solid gray;
+            padding: 40px 40px;
+            box-shadow: 0 0 10px white;
+        }
+        .logo div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo div img {
+            width: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 10%;
+        }
+        .card {
+            height: 320px;
+            width: 300px;
+            margin-top: 50px;
+            border: 1px solid rgb(89, 89, 193);
+            box-shadow: 0 0 10px white;
+            border-radius: 5px;
+        }
+        .card img {
+            padding: 10px 10px;
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .card h3 {
+            padding: 10x 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card p {
+            text-align: center;
         }
     </style>
 </head>
@@ -125,6 +173,24 @@
             <img src="./images (4).jpeg" alt="">
             <img src="./images (5).jpeg" alt="">
             <img src="./images (6).jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="card-section">
+        <div class="card">
+            <img src="./images.jpeg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente quos eos atque tempora.</p>
+        </div>
+        <div class="card">
+            <img src="./images (4).jpeg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente quos eos atque tempora.</p>
+        </div>
+        <div class="card">
+            <img src="./images (5).jpeg" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente quos eos atque tempora.</p>
         </div>
     </section>
 </body>
