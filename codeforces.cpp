@@ -4,9 +4,10 @@
 using namespace std;
 
 int main(){
-    int n=0;cin>>n;
-    vector<int> vec1(n);
-    
-
+    vector<int> v={1,2,3,4,5,6,3,4,4,3,2,3};
+    int a = max_element(v.begin(),v.end());
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<" ";
+    }
     return 0;
 }
