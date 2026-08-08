@@ -1,13 +1,24 @@
 #include<iostream>
 #include<vector>
-#include<algorithm>
 using namespace std;
 
 int main(){
-    vector<int> v={1,2,3,4,5,6,3,4,4,3,2,3};
-    int a = max_element(v.begin(),v.end());
-    for(int i=0;i<v.size();i++){
-        cout<<v[i]<<" ";
+    int n=0;cin>>n;
+    vector<int> v(n);
+    int k=0;cin>>k;
+    cout<<"enter the vector";
+    for(int i=0;i<n;i++){
+        cin>>v[i];
     }
-    return 0;
+    int left=0;
+    int right=n-1;
+    while(left<right){
+        if(v[left]+v[right]==k){
+            cout<<v[left]<<" "<<v[right]<<endl;
+            left++;
+            right--;
+        }
+        else if(v[left]+v[right]<k) left++; 
+        else right--;
+    }
 }
