@@ -9,14 +9,7 @@ int main(){
     cout<<"enter the vector";
     for(int i=0;i<n;i++){
         cin>>v[i];
-    }
-    int left=0;
-    int right=n-1;
-    while(left<right){
-        if(v[left]+v[right]==k){
-            cout<<v[left]<<" "<<v[right]<<endl;
-            left++;
-            right--;
+    w
         }
         else if(v[left]+v[right]<k) left++; 
         else right--;
