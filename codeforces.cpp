@@ -3,15 +3,10 @@
 using namespace std;
 
 int main(){
-    int n=0;cin>>n;
+    int n;cin>>n;
     vector<int> v(n);
-    int k=0;cin>>k;
-    cout<<"enter the vector";
+    sort(v.begin(),v.end());
     for(int i=0;i<n;i++){
-        cin>>v[i];
-    w
-        }
-        else if(v[left]+v[right]<k) left++; 
-        else right--;
+        
     }
 }
