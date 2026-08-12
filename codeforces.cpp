@@ -1,26 +1,16 @@
 #include<iostream>
-#include<vector>
-#include<algorithm>
+#include<string>
+#include<set>
 using namespace std;
 
 int main(){
-    int n;cin>>n;
-    vector<int> v(n);
-    int total=0;
-    for(int i=0;i<n;i++){
-        cin>>v[i];
-        total+=v[i];
+    set<char> s;
+    string n;
+    cin>>n;
+    for(char x:n){
+        s.insert(x);
     }
-    sort(v.rbegin(),v.rend());
-    int mine=0;
-    int count=0;
+    if(s.size()%2==0)cout<<"CHAT WITH HER!"<<endl;
 
-    for(int i=0;i<n;i++){
-        mine+=v[i];
-        count++;
-        if(mine>total-mine){
-            break;
-        }
     }
-    cout<<count<<endl;
 }
