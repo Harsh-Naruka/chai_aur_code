@@ -6,12 +6,6 @@ map<int, int> mp;
 
 
 
-// Access
-
-
-// Check if key exists
-if (mp.find(20) != mp.end()) {
-    cout << "Found";
 }
 
 // Delete
