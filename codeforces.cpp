@@ -18,11 +18,6 @@ int main() {
 
             int alarm = h * 60 + m;
             int diff = alarm - current;
-
-            if (diff < 0)
-                diff += 24 * 60;
-
-            ans = min(ans, diff);
         }
 
         cout << ans / 60 << " " << ans % 60 << endl;
