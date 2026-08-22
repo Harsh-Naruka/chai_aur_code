@@ -29,14 +29,7 @@ int main() {
 
                     if (i % 2 == 0) {
                         // positions 0,2,4,... depend on first
-                        expected = first ^ (i / 2 % 2);
-                  if
-                    }
-                }
-
-                if (ok)
-                    ans++;
-            }
+            
         }
 
         cout << ans << '\n';
