@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const long long MOD = 998244353;
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -11,28 +9,16 @@ int main() {
     cin >> t;
 
     while (t--) {
-        int n;
-        string s;
+        long long n, k, x;
+        cin >> n >> k >> x;
 
-        cin >> n >> s;
+        long long minSum = k * (k + 1) / 2;
+        long long maxSum = k * (2 * n - k + 1) / 2;
 
-        long long ans = 0;
-
-        // Try all possible values of s[0] and s[1]
-        for (int first = 0; first <= 1; first++) {
-            for (int second = 0; second <= 1; second++) {
-
-                bool ok = true;
-
-                for (int i = 0; i < n; i++) {
-                    int expected;
-
-                    if (i % 2 == 0) {
-                        // positions 0,2,4,... depend on first
-            
-        }
-
-        cout << ans << '\n';
+        if (x >= minSum && x <= maxSum)
+            cout << "YES\n";
+        else
+            cout << "NO\n";
     }
 
     return 0;
