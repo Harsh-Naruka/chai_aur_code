@@ -13,10 +13,6 @@ int main() {
         string s;
         cin >> n >> k >> s;
 
-        int cnt[26] = {};
-        for (ar c : s)
-            cnt[c - 'a']++;
-;
       
 
     return 0;
