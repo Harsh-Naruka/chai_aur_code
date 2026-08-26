@@ -9,17 +9,16 @@ int main() {
     cin >> t;
 
     while (t--) {
-        long long n, k, x;
-        cin >> n >> k >> x;
+        int n, k;
+        string s;
+        cin >> n >> k >> s;
 
-        long long minSum = k * (k + 1) / 2;
-        long long maxSum = k * (2 * n - k + 1) / 2;
+        int cnt[26] = {};
+        for (char c : s)
+            cnt[c - 'a']++;
 
-        if (x >= minSum && x <= maxSum)
-            cout << "YES\n";
-        else
-            cout << "NO\n";
-    }
+        int odd = 0;
+      
 
     return 0;
 }
