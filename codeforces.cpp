@@ -9,11 +9,5 @@ int main() {
     cin >> t;
 
     while (t--) {
-        int n, k;
-        string s;
-        cin >> n >> k >> s;
-
-      
-
-    return 0;
+       ..
 }
