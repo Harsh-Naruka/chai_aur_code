@@ -14,10 +14,9 @@ int main() {
         cin >> n >> k >> s;
 
         int cnt[26] = {};
-        for (char c : s)
+        for (ar c : s)
             cnt[c - 'a']++;
-
-        int odd = 0;
+;
       
 
     return 0;
