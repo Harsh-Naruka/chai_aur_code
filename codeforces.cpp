@@ -11,12 +11,6 @@ int main() {
     int n;
     cin >> n;
 
-    // Option 1: Keep original number
-    int option1 = n;
-    
-    // Option 2: Remove the last digit
-    int option2 = n / 10;
-    
     // Option 3: Remove the second-to-last digit
     int option3 = (n / 100) * 10 + (n % 10);
 
