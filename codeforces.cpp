@@ -1,39 +1,45 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-void solve() {
-    int n;
-    cin >> n;
-    vector<int> a(n);
-    for (int i = 0; i < n; ++i) {
-        cin >> a[i];
-        if (a[i] == 1) {
-            a[i] = 2; // Step 1: Replace 1s with 2s
-        }
-    }
-
-    // Step 2: Ensure a[i+1] % a[i] != 0
-    for (int i = 0; i < n - 1; ++i) {
-        if (a[i + 1] % a[i] == 0) {
-            a[i + 1]++;
-        }
-    }
-
-    for (int i = 0; i < n; ++i) {
-        cout << a[i] << (i == n - 1 ? "" : " ");
-    }
-    cout << "\n";
-}
-
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
     int t;
     cin >> t;
+
     while (t--) {
-        solve();
+        int n;
+        cin >> n;
+
+        vector<bool> used(2 * n + 1, false);
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int x;
+                cin >> x;
+                used[x] = true;
+            }
+        }
+
+        int missing = 0;
+
+        for (int x = 1; x <= 2 * n; x++) {
+            if (!used[x]) {
+                missing = x;
+                break;
+            }
+        }
+
+        cout << missing << " ";
+
+        for (int x = 1; x <= 2 * n; x++) {
+            if (used[x])
+                cout << x << " ";
+        }
+
+        cout << '\n';
     }
+
     return 0;
 }
