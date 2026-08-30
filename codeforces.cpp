@@ -31,15 +31,5 @@ int main() {
             }
         }
 
-        cout << missing << " ";
 
-        for (int x = 1; x <= 2 * n; x++) {
-            if (used[x])
-                cout << x << " ";
-        }
-
-        cout << '\n';
-    }
-
-    return 0;
 }
