@@ -22,13 +22,7 @@ int main() {
             }
         }
 
-        int missing = 0;
-
-        for (int x = 1; x <= 2 * n; x++) {
-            if (!used[x]) {
-                missing = x;
-                break;
-            }
+        in
         }
 
 
