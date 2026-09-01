@@ -18,12 +18,7 @@ int main() {
             for (int j = 0; j < n; j++) {
                 int x;
                 cin >> x;
-                used[x] = true;
-            }
-        }
-
-        in
-        }
+          
 
 
 }
