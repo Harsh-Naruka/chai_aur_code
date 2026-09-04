@@ -1,4 +1,4 @@
-const teas=("Green tea","Blacktea","oolong tea","white tea","Herbal tea","Chamomoli Tea")
+const teas=["Green tea","Blacktea","oolong tea","white tea","Herbal tea","Chamomoli Tea"]
 
 // Remove a particular elemnt using index
 const index = teas.indexOf("Chamomoli Tea");
