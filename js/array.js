@@ -7,6 +7,6 @@ let intfruits = new Array("kiwi","Avacado","dragon fruit");
 // console.log(intfruits.length);
 
 fruits[0]="blueberry";
-f
+console.log(intfruits[0]);
 
 
