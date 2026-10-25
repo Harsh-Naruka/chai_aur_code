@@ -1,0 +1,36 @@
+* {box-sizing: border-box;}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  background: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.input-row { display: flex; gap: 8px; }
+.input-row input { flex: 1; padding: 8px; }
+button { padding: 8px 12px; cursor: pointer; }
+
+ul { list-style: none; padding: 0; }
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+li span { flex: 1; }
+
+li.done span {
+  text-decoration: line-through;
+  color: gray;
+}
