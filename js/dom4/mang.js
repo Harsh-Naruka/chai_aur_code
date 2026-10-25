@@ -3,7 +3,7 @@ const addBtn = document.getElementById("addBtn")
 const taskList = document.getElementById("taskList");
 
 function addTask(){
-    const text = taskInput.ariaValueMax.trim();
+    const text = taskInput.value.trim();
     if(text==="")return;
 
     const li = document.createElement("li");
@@ -19,7 +19,7 @@ function addTask(){
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
-    deleteBtn.addEventListener( "click" , () => li.remove);
+    deleteBtn.addEventListener( "click" , () => li.remove());
 
     li.append(checkbox, span,deleteBtn);
     taskList.appendChild(li);
