@@ -1,16 +1,106 @@
-* { box-sizing: border-box;}
 
-body{
- font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav .a{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Navigation Bar */
+nav {
     display: flex;
-    justify-content: flex-start;
-    padding-top: 50px;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #eeeeee;
+    padding: 12px;
+    border-bottom: 2px solid #cccccc;
+}
+
+nav a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 24px;
+    padding: 12px 30px;
+    border: 2px solid #212121;
+    border-radius: 6px;
+    background-color: #eeeeee;
+}
+
+
+.canvas {
+    text-align: center;
+    margin: 150px auto;
+    width: 80%;
+}
+
+.canvas h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+/* Color Buttons */
+.button {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#white {
+    background-color: white;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+/* Instructions */
+.canvas h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 32px;
+    line-height: 1.2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .canvas {
+        width: 95%;
+        margin-top: 100px;
+    }
+
+    .canvas h1 {
+        font-size: 28px;
+    }
+
+    .button {
+        width: 65px;
+        height: 65px;
+    }
+
+    .canvas h2 {
+        font-size: 24px;
+    }
 }
